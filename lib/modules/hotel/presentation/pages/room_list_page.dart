@@ -33,7 +33,7 @@ class _RoomListPageState extends State<RoomListPage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppTheme.getTheme().backgroundColor,
+      backgroundColor: AppTheme.getTheme().scaffoldBackgroundColor,
       body: Column(
         children: <Widget>[
           getAppBarUI(),
@@ -65,7 +65,7 @@ class _RoomListPageState extends State<RoomListPage>
   Widget getAppBarUI() {
     return Container(
       decoration: BoxDecoration(
-        color: AppTheme.getTheme().backgroundColor,
+        color: AppTheme.getTheme().scaffoldBackgroundColor,
         boxShadow: <BoxShadow>[
           BoxShadow(
               color: AppTheme.getTheme().dividerColor,

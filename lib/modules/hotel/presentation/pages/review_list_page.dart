@@ -30,7 +30,7 @@ class _ReviewListPageState extends State<ReviewListPage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppTheme.getTheme().backgroundColor,
+      backgroundColor: AppTheme.getTheme().scaffoldBackgroundColor,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.start,

@@ -35,7 +35,7 @@ class HotelRowThreeWidget extends StatelessWidget {
               padding: EdgeInsets.only(left: 24, right: 24, top: 8, bottom: 16),
               child: Container(
                 decoration: BoxDecoration(
-                  color: AppTheme.getTheme().backgroundColor,
+                  color: AppTheme.getTheme().scaffoldBackgroundColor,
                   borderRadius: BorderRadius.all(Radius.circular(16.0)),
                   boxShadow: <BoxShadow>[
                     BoxShadow(

@@ -6,7 +6,6 @@ class AppTheme {
   static bool isDark = false;
   static Color primaryColors = HexColor("#4FBE9F");
 
-
   static TextTheme _buildTextTheme(TextTheme base) {
     var fontName = "WorkSans";
     return base.copyWith(
@@ -26,71 +25,58 @@ class AppTheme {
   }
 
   static ThemeData getTheme() {
-    if (isDark) {
-      return newDarkTheme();
-    } else {
-      return newLightTheme();
-    }
+    return isDark ? newDarkTheme() : newLightTheme();
   }
 
   static ThemeData newLightTheme() {
     Color primaryColor = primaryColors;
     Color secondaryColor = primaryColors;
-    final ColorScheme colorScheme = const ColorScheme.light().copyWith(
+    final ColorScheme colorScheme = ColorScheme.fromSwatch().copyWith(
       primary: primaryColor,
       secondary: secondaryColor,
+      error: const Color(0xFFB00020),
+      background: const Color(0xFFF6F6F6),
     );
     final ThemeData base = ThemeData.light();
     return base.copyWith(
-      colorScheme: colorScheme,
       primaryColor: primaryColor,
-      // buttonColor: primaryColor,
       indicatorColor: Colors.white,
       splashColor: Colors.white24,
       splashFactory: InkRipple.splashFactory,
-      // accentColor: secondaryColor,
       canvasColor: Colors.white,
-      backgroundColor: const Color(0xFFFFFFFF),
-      scaffoldBackgroundColor: const Color(0xFFF6F6F6),
-      errorColor: const Color(0xFFB00020),
       buttonTheme: ButtonThemeData(
         colorScheme: colorScheme,
         textTheme: ButtonTextTheme.primary,
       ),
       textTheme: _buildTextTheme(base.textTheme),
       primaryTextTheme: _buildTextTheme(base.primaryTextTheme),
-      // accentTextTheme: _buildTextTheme(base.accentTextTheme),
-      platform: TargetPlatform.iOS,
+      platform: TargetPlatform.iOS, colorScheme: colorScheme.copyWith(background: const Color(0xFFF6F6F6)),
     );
   }
 
   static ThemeData newDarkTheme() {
     Color primaryColor = primaryColors;
     Color secondaryColor = primaryColors;
-    final ColorScheme colorScheme = const ColorScheme.light().copyWith(
+    final ColorScheme colorScheme = ColorScheme.fromSwatch(brightness: Brightness.dark).copyWith(
       primary: primaryColor,
       secondary: secondaryColor,
+      error: const Color(0xFFB00020),
+      background: const Color(0xFF0F0F0F),
     );
     final ThemeData base = ThemeData.dark();
     return base.copyWith(
-      colorScheme: colorScheme,
       primaryColor: primaryColor,
-      // buttonColor: primaryColor,
       indicatorColor: Colors.white,
       splashColor: Colors.white24,
       splashFactory: InkRipple.splashFactory,
-      // accentColor: secondaryColor,
-      canvasColor: Colors.white,
-      backgroundColor: Colors.black,
-      scaffoldBackgroundColor: const Color(0xFF0F0F0F),
+      canvasColor: Colors.grey[900],
       buttonTheme: ButtonThemeData(
         colorScheme: colorScheme,
         textTheme: ButtonTextTheme.primary,
       ),
       textTheme: _buildTextTheme(base.textTheme),
       primaryTextTheme: _buildTextTheme(base.primaryTextTheme),
-      // accentTextTheme: _buildTextTheme(base.accentTextTheme),
-      platform: TargetPlatform.iOS,
+      platform: TargetPlatform.iOS, colorScheme: colorScheme.copyWith(background: const Color(0xFF0F0F0F)),
     );
   }
 

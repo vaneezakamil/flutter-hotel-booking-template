@@ -13,7 +13,7 @@ class HotelRatingWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: AppTheme.getTheme().backgroundColor,
+        color: AppTheme.getTheme().scaffoldBackgroundColor,
         borderRadius: BorderRadius.all(Radius.circular(16.0)),
         boxShadow: <BoxShadow>[
           BoxShadow(

@@ -20,7 +20,7 @@ class _SettingsPageState extends State<SettingsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppTheme.getTheme().backgroundColor,
+      backgroundColor: AppTheme.getTheme().scaffoldBackgroundColor,
       body: InkWell(
         splashColor: Colors.transparent,
         highlightColor: Colors.transparent,

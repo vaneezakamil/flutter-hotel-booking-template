@@ -29,7 +29,7 @@ class _SignUpPageState extends State<SignUpPage> {
   Widget build(BuildContext context) {
     return Container(
       child: Scaffold(
-        // backgroundColor: AppTheme.getTheme().backgroundColor,
+        // backgroundColor: AppTheme.getTheme().scaffoldBackgroundColor,
         body: InkWell(
           splashColor: Colors.transparent,
           highlightColor: Colors.transparent,
@@ -158,7 +158,7 @@ class _SignUpPageState extends State<SignUpPage> {
                       Text(
                         _signUpStatus.toString(),
                         key: Key('txt_error'),
-                        style: TextStyle(color: ColorHelper.errorColor),
+                        style: TextStyle(color: Theme.of(context).colorScheme.error),
                       ),
                       Padding(
                         padding: const EdgeInsets.all(16.0),

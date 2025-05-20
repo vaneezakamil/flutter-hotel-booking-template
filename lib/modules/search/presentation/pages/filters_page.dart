@@ -23,7 +23,7 @@ class _FiltersPageState extends State<FiltersPage> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: AppTheme.getTheme().backgroundColor,
+      color: AppTheme.getTheme().scaffoldBackgroundColor,
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: Column(
@@ -368,7 +368,7 @@ class _FiltersPageState extends State<FiltersPage> {
   // Widget getAppBarUI() {
   //   return Container(
   //     decoration: BoxDecoration(
-  //       color: AppTheme.getTheme().backgroundColor,
+  //       color: AppTheme.getTheme().scaffoldBackgroundColor,
   //       boxShadow: <BoxShadow>[
   //         BoxShadow(color: Colors.grey.withOpacity(0.2), offset: Offset(0, 2), blurRadius: 4.0),
   //       ],

@@ -17,7 +17,7 @@ class _FeedbackPageState extends State<FeedbackPage> {
   Widget build(BuildContext context) {
     return Container(
       child: Scaffold(
-        backgroundColor: AppTheme.getTheme().backgroundColor,
+        backgroundColor: AppTheme.getTheme().scaffoldBackgroundColor,
         body: InkWell(
           splashColor: Colors.transparent,
           highlightColor: Colors.transparent,

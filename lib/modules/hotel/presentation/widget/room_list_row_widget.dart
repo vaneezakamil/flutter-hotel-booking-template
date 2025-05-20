@@ -172,7 +172,7 @@ class _RoomListRowWidgetState extends State<RoomListRowWidget> {
                                   Text(
                                     S.of(context).moreDetails,
                                     style: TextStyle(
-                                      // color: AppTheme.getTheme().backgroundColor,
+                                      // color: AppTheme.getTheme().scaffoldBackgroundColor,
                                       fontWeight: FontWeight.w600,
                                     ),
                                   ),
@@ -180,7 +180,7 @@ class _RoomListRowWidgetState extends State<RoomListRowWidget> {
                                     padding: const EdgeInsets.only(top: 2),
                                     child: Icon(
                                       Icons.keyboard_arrow_down,
-                                      // color: AppTheme.getTheme().backgroundColor,
+                                      // color: AppTheme.getTheme().scaffoldBackgroundColor,
                                       size: 24,
                                     ),
                                   )
