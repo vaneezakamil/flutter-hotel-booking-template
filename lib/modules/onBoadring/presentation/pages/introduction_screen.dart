@@ -7,8 +7,8 @@ import 'package:motel/modules/_common/widget/round_corners_button_widget.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import '../../../../app/ui/appTheme.dart';
 import '../../../../main.dart';
-import '../../../authentication/preseentation/pages/login_page.dart';
-import '../../../authentication/preseentation/pages/signup_page.dart';
+import '../../../authentication/presentation/pages/login_page.dart';
+import '../../../authentication/presentation/pages/signup_page.dart';
 
 class IntroductionPage extends StatefulWidget {
   @override

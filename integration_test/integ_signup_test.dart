@@ -4,8 +4,8 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:integration_test/integration_test.dart';
 import 'package:motel/generated/l10n.dart';
 import 'package:motel/main.dart';
-import 'package:motel/modules/authentication/preseentation/pages/login_page.dart';
-import 'package:motel/modules/authentication/preseentation/pages/signup_page.dart';
+import 'package:motel/modules/authentication/presentation/pages/login_page.dart';
+import 'package:motel/modules/authentication/presentation/pages/signup_page.dart';
 import 'package:motel/modules/dashboard/presentation/pages/dashboard_page.dart';
 import 'package:motel/modules/onBoadring/presentation/pages/introduction_screen.dart';
 

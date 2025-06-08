@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:motel/modules/authentication/preseentation/pages/signup_page.dart';
+import 'package:motel/modules/authentication/presentation/pages/signup_page.dart';
 import 'package:motel/modules/dashboard/presentation/pages/dashboard_page.dart';
 import 'app/ui/appTheme.dart';
 import 'generated/l10n.dart';
-import 'modules/authentication/preseentation/pages/login_page.dart';
+import 'modules/authentication/presentation/pages/login_page.dart';
 import 'modules/onBoadring/presentation/pages/splash_screen.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
